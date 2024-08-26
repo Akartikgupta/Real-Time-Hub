@@ -1,0 +1,12 @@
+{
+  "name": "real-time-collaborative-editor-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev":"cd client/editor && npm start && cd .. && cd server && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

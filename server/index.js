@@ -3,9 +3,10 @@ const app = express()
 const http = require("http")
 const { Server } = require("socket.io")
 
+// it create server using http request
 const server = http.createServer(app)
-
 const io = new Server(server)
+
 const userSocketMap = {}
 
 const getAllConnectedClients = (roomId) => {

@@ -17,7 +17,7 @@ function Editor({socketRef, roomId, onCodeChange}) {
                     theme: 'dracula',
                     autoCloseTags: true,
                     autoCloseBrackets: true,
-                    lineNumbers: true
+                    lineNumbers: true,
                 }
             )
             // for sync the code
