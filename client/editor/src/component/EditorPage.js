@@ -118,21 +118,25 @@ function EditorPage() {
 </div>
 
         {/* Main Content Area (Editor) */}
-        <div className='col-md-10 d-flex flex-column h-100' 
-     style={{ backgroundColor: '#fff', overflow: 'hidden', position: 'relative' }}>
+        <div className="col-md-10 d-flex flex-column " 
+     style={{ backgroundColor: '#fff', overflow: 'hidden', height: '100vh' }}>
   <div style={{
     flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%',
     overflowY: 'auto',
-    paddingRight: 0,
-    paddingLeft: 0,
-    marginRight: 0,
-    width: '100%', // Adjust to prevent content from hiding behind the hidden scrollbar
-    scrollbarWidth: 'none',  // Firefox
-    msOverflowStyle: 'none'  // IE and Edge
+    padding: 0,
+    margin: 0,
+    width: '100%',
+    scrollbarWidth: 'none',
+    msOverflowStyle: 'none'
   }}>
      <Editor socketRef={socketRef} roomId={roomId} onCodeChange={(code) => codeRef.current = code}/>
   </div>
 </div>
+
+
 
       </div>
     </div>
